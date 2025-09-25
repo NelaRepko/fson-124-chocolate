@@ -1,162 +1,163 @@
+/* @font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf');
+} */
+
+/* #region Base / Global */
 body {
-  /* background-color: lightblue; */
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+  color: #111111;
 }
-
-a {
-  text-decoration: none;
-}
-
-ul {
+ul,
+ol {
   list-style-type: none;
 }
-
-/* #region Header */
-.header {
-  /* background-color: teal; */
+a {
+  color: currentColor;
+  text-decoration: none;
 }
-.footer {
-  background-color: lightpink;
+button {
+  font-family: inherit;
+  cursor: pointer;
 }
-.fixed {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticky {
-  position: sticky;
-  bottom: 0;
-  width: 100%;
+address {
+  font-style: normal;
 }
 /* #endregion */
 
-/* Class selector */
-.menu {
-  list-style-type: circle;
+/* #region Common */
+.visually-hidden,
+.read-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-.menu-item {
-  /* border: 2px dashed teal; */
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
 }
-.menu-item-link {
+.accent {
+  color: #fd9222;
 }
 
 .socials {
-  /* background-color: hotpink; */
 }
 .socials-item {
 }
-.socials-link {
+.socials-item-link {
 }
-.socials-icon {
-}
-
-/* #region Ingredients */
-.ingredients {
-  /* background-color: lightseagreen; */
-}
-.ingredients-title {
-}
-.ingredients-list {
-}
-.ingredients-item {
-}
-.ingredients-ill {
-}
-.ingredients-subtitle {
+.socials-item-link-icon {
 }
 /* #endregion */
 
-/* #region Made */
-.made {
+/* #region Hero section */
+.hero {
+  background: rgba(17, 17, 17, 0.4);
+}
+.hero-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21; /* 34px / 28px */
+  letter-spacing: -0.03em; /* -0.84px / 28px */
+  color: #fff;
 }
 /* #endregion */
 
-/* ID selector */
-/* #home {
-  background-color: darkorange;
+/* #region Products */
+.products {
 }
-
-#home > nav {
-  font-size: 32px;
+.products-title {
 }
-
-nav {
-  font-size: 10px;
-} */
-
-/* Attribute Selector */
-/* [aria-label] {
-  display: inline-block;
-  padding: 10px;
-  border: 2px solid red;
-} */
-
-/* [class='socials'] {
+.products-list {
 }
-.socials {
-} */
-
-/* [aria-label='Site facebook.com'] {
-  display: inline-block;
-  padding: 10px;
-  border: 2px solid;
-  border-color: darkmagenta;
-} */
-
-/* html > body > header > ul > li > a > img {
-  width: 80px;
-  height: 80px;
-}
-
-header > nav img {
-  width: 30px;
-}
-
-.logo-icon {
-  width: 30px;
-}
-
-header > ul img {
-} */
-
-/* Pseudo classes */
-.hero-title {
-  font-family: sans-serif;
-  color: teal;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
-}
-.hero-title:hover {
-  color: lightpink;
-}
-button:focus {
-  color: darkred;
-}
-.hero-title:active {
-  color: chartreuse;
-}
-
-.link {
-  color: black;
-}
-.link:hover,
-.link:focus {
-  color: blue;
-}
-
-.link:active {
-  color: #0a9bb6;
-  color: rgb(0, 0, 0);
-  color: rgb(255 104 255);
-  color: rgb(255 104 255 / 50%);
-  color: rgba(255, 104, 255, 0.5);
-}
-
-.hero-title {
-  color: #0a9bb6;
-  color: rgb(0, 0, 0);
-  color: rgb(255 104 255);
-  color: rgb(255 104 255 / 50%);
-  color: rgba(255, 104, 255, 0.5);
+.products-item {
   background-color: #fff;
 }
+.products-ill {
+}
+.products-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.products-type {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+.products-btn {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #fafafa;
+}
+/* #endregion */
+
+/* #region Footer */
+.footer {
+  background-color: #1e1823;
+}
+.footer-slogan {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.footer-caption {
+  font-size: 14px; /* 16px */
+  font-weight: 500; /* 400 */
+  line-height: 1.29;
+  color: #fff;
+}
+.footer-socials {
+}
+.footer-contacts {
+}
+.footer-contacts-list {
+}
+.footer-contacts-item {
+}
+.footer-contacts-link {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: #fd9222;
+}
+.footer-menu {
+}
+.footer-menu-item {
+}
+.footer-menu-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.footer-menu-link:hover,
+.footer-menu-link:focus {
+  color: #fd9222;
+}
+/* #endregion */

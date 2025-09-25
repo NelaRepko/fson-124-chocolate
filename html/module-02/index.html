@@ -23,9 +23,18 @@
       } */
     </style>
 
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Linked CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  <!-- <body class="page" id="main-page" style="background-color: slategrey"> -->
   <body>
     <!-- Header section -->
     <header class="header" id="home">
@@ -122,7 +131,7 @@
       <!-- Benefits section -->
       <section>
         <!-- Logical heading -->
-        <h2 hidden>Chocolate benefits</h2>
+        <h2 class="visually-hidden">Chocolate benefits</h2>
 
         <ul>
           <li>
@@ -158,8 +167,9 @@
 
       <!-- Ingredients section -->
       <section class="ingredients" id="ingredients">
-        <h2 class="ingredients-title">
-          It all adds up to one exceptional taste sensation
+        <h2 class="ingredients-title section-title">
+          It all adds up to one exceptional
+          <span class="accent">taste</span> sensation
         </h2>
 
         <ul class="ingredients-list">
@@ -238,7 +248,9 @@
 
       <!-- Made section -->
       <section id="made">
-        <h2>How it’s made?</h2>
+        <h2 class="section-title">
+          How it’s <span class="accent">made</span>?
+        </h2>
 
         <img
           src="./images/made/img.jpg"
@@ -271,104 +283,114 @@
       </section>
 
       <!-- Products section -->
-      <section>
-        <h2>Our products</h2>
+      <section class="products">
+        <h2 class="products-title section-title">
+          Our <span class="accent">products</span>
+        </h2>
 
-        <ul>
-          <li>
+        <ul class="products-list">
+          <li class="products-item">
             <img
+              class="products-ill"
               src="./images/products/img-1.jpg"
               alt="Orange "
               width="230"
               height="201"
             />
-            <h3>Orange</h3>
-            <p>Dark chocolate</p>
-            <button type="button">45 UAH</button>
+            <h3 class="products-name">Orange</h3>
+            <p class="products-type">Dark chocolate</p>
+            <button class="products-btn" type="button">45 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
+              class="products-ill"
               src="./images/products/img-2.jpg"
               alt="Apple&Cranberry"
               width="230"
               height="201"
             />
-            <h3>Apple&Cranberry</h3>
-            <p>Milk chocolate</p>
-            <button type="button">50 UAH</button>
+            <h3 class="products-name">Apple&Cranberry</h3>
+            <p class="products-type">Milk chocolate</p>
+            <button class="products-btn" type="button">50 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
+              class="products-ill"
               src="./images/products/img-3.jpg"
               alt="Lime&Sea salt"
               width="230"
               height="201"
             />
-            <h3>Lime&Sea salt</h3>
-            <p>Dark chocolate</p>
-            <button type="button">66 UAH</button>
+            <h3 class="products-name">Lime&Sea salt</h3>
+            <p class="products-type">Dark chocolate</p>
+            <button class="products-btn" type="button">66 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
+              class="products-ill"
               src="./images/products/img-4.jpg"
               alt="Pineapple"
               width="230"
               height="201"
             />
-            <h3>Pineapple</h3>
-            <p>Dark chocolate</p>
-            <button type="button">54 UAH</button>
+            <h3 class="products-name">Pineapple</h3>
+            <p class="products-type">Dark chocolate</p>
+            <button class="products-btn" type="button">54 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
+              class="products-ill"
               src="./images/products/img-5.jpg"
               alt="Classic"
               width="230"
               height="201"
             />
-            <h3>Classic</h3>
-            <p>Milk chocolate</p>
-            <button type="button">45 UAH</button>
+            <h3 class="products-name">Classic</h3>
+            <p class="products-type">Milk chocolate</p>
+            <button class="products-btn" type="button">45 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
+              class="products-ill"
               src="./images/products/img-6.jpg"
               alt="Honey"
               width="230"
               height="201"
             />
-            <h3>Honey</h3>
-            <p>Milk chocolate</p>
-            <button type="button">50 UAH</button>
+            <h3 class="products-name">Honey</h3>
+            <p class="products-type">Milk chocolate</p>
+            <button class="products-btn" type="button">50 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
+              class="products-ill"
               src="./images/products/img-7.jpg"
               alt="Roasted fruits"
               width="230"
               height="201"
             />
-            <h3>Roasted fruits</h3>
-            <p>Dark chocolate</p>
-            <button type="button">66 UAH</button>
+            <h3 class="products-name">Roasted fruits</h3>
+            <p class="products-type">Dark chocolate</p>
+            <button class="products-btn" type="button">66 UAH</button>
           </li>
-          <li>
+          <li class="products-item">
             <img
+              class="products-ill"
               src="./images/products/img-8.jpg"
               alt="Classic"
               width="230"
               height="201"
             />
-            <h3>Classic</h3>
-            <p>White chocolate</p>
-            <button type="button">54 UAH</button>
+            <h3 class="products-name">Classic</h3>
+            <p class="products-type">White chocolate</p>
+            <button class="products-btn" type="button">54 UAH</button>
           </li>
         </ul>
       </section>
 
       <!-- Bestsellers section -->
       <section>
-        <h2>Top sellers</h2>
+        <h2 class="section-title"><span class="accent">Top</span> sellers</h2>
 
         <ul>
           <li>
@@ -403,7 +425,9 @@
 
       <!-- Reviews section -->
       <section id="reviews">
-        <h2>Chocolate is loved</h2>
+        <h2 class="section-title">
+          <span class="accent">Chocolate</span> is loved
+        </h2>
 
         <ul>
           <li>
@@ -455,63 +479,84 @@
 
     <!-- Footer section -->
     <footer class="footer">
-      <p>Chocolate a delicious cure for a bad day</p>
+      <p class="footer-slogan">
+        <span class="accent">Chocolate</span> a delicious cure for a bad day
+      </p>
 
-      <p>Social networks</p>
-      <ul>
-        <li>
+      <p class="footer-caption">Social networks</p>
+      <ul class="socials footer-socials">
+        <li class="socials-item">
           <a
+            class="socials-item-link"
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Site facebook.com"
           >
-            <img src="./images/icons/facebook.svg" alt="Icon facebook" />
+            <img
+              class="socials-item-link-icon"
+              src="./images/icons/facebook.svg"
+              alt="Icon facebook"
+            />
           </a>
         </li>
-        <li>
+        <li class="socials-item">
           <a
+            class="socials-item-link"
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Site instagram.com"
           >
-            <img src="./images/icons/instagram.svg" alt="Icon instagram" />
+            <img
+              class="socials-item-link-icon"
+              src="./images/icons/instagram.svg"
+              alt="Icon instagram"
+            />
           </a>
         </li>
-        <li>
+        <li class="socials-item">
           <a
+            class="socials-item-link"
             href="https://x.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Site x.com"
           >
-            <img src="./images/icons/twitter.svg" alt="Icon twitter" />
+            <img
+              class="socials-item-link-icon"
+              src="./images/icons/twitter.svg"
+              alt="Icon twitter"
+            />
           </a>
         </li>
       </ul>
 
-      <address>
-        <p>Contact us</p>
-        <ul>
-          <li>
-            <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+      <address class="footer-contacts">
+        <p class="footer-caption">Contact us</p>
+        <ul class="footer-contacts-list">
+          <li class="footer-contacts-item">
+            <a class="footer-contacts-link" href="tel:+380684439426">
+              +380 (68) 443-94-26
+            </a>
           </li>
-          <li>
-            <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+          <li class="footer-contacts-item">
+            <a class="footer-contacts-link" href="mailto:simplychoc@gmail.com">
+              simplychoc@gmail.com
+            </a>
           </li>
         </ul>
       </address>
 
-      <ul>
-        <li>
-          <a href="#home">Home</a>
+      <ul class="footer-menu">
+        <li class="footer-menu-item">
+          <a class="footer-menu-link" href="#home">Home</a>
         </li>
-        <li>
-          <a href="#">How it’s made?</a>
+        <li class="footer-menu-item">
+          <a class="footer-menu-link" href="#">How it’s made?</a>
         </li>
-        <li>
-          <a href="#">Chocolate is loved</a>
+        <li class="footer-menu-item">
+          <a class="footer-menu-link" href="#">Chocolate is loved</a>
         </li>
       </ul>
     </footer>
