@@ -1,3 +1,4 @@
+/* #region Base */
 :root {
   /* Fonts */
   --primary-font: 'Montserrat', sans-serif;
@@ -21,12 +22,21 @@ body {
   color: rgb(var(--cl-primary));
   background-color: rgb(var(--cl-body));
 }
-
-/* #region Base */
-/* Reset */
+/* Reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -39,7 +49,10 @@ button {
 address {
   font-style: normal;
 }
-
+img {
+  display: block;
+}
+/* Reset end */
 /* Common */
 .visually-hidden {
   position: absolute;
@@ -55,6 +68,7 @@ address {
 }
 
 .section {
+  padding: 60px 0;
 }
 .section-title {
   font-size: 24px;
@@ -66,6 +80,15 @@ address {
 }
 .accent-text {
   color: var(--cl-accent);
+}
+
+.container {
+  width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 /* #endregion */
 
@@ -138,9 +161,17 @@ address {
 
 /* #region Hero */
 .hero {
+  padding-bottom: 80px;
+}
+.hero-container {
+  width: 1136px;
+  margin: 0 auto;
+  padding: 381px 40px 40px;
   background: rgb(var(--cl-primary) / 40%);
+  border-radius: 30px;
 }
 .hero-title {
+  width: 484px;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
@@ -158,11 +189,13 @@ address {
 
 /* #region Benefits */
 .benefits {
+  padding: 50px 0;
   background: rgb(var(--cl-dark));
 }
 .benefits-list {
 }
 .benefits-item {
+  width: 308px;
 }
 .benefits-subtitle {
   font-size: 18px;
@@ -180,15 +213,16 @@ address {
 /* #endregion */
 
 /* #region Ingridients */
-.ingridients {
+.ingredients {
+  padding-top: 120px;
 }
-.ingridients-list {
+.ingredients-list {
 }
-.ingridients-item {
+.ingredients-item {
 }
-.ingridients-ill {
+.ingredients-ill {
 }
-.ingridients-caption {
+.ingredients-caption {
   font-size: inherit;
   font-weight: 600;
   text-transform: uppercase;
@@ -259,6 +293,7 @@ address {
 
 /* #region Reviews */
 .reviews {
+  padding-bottom: 120px;
 }
 .reviews-list {
 }
