@@ -22,6 +22,10 @@ body {
   color: rgb(var(--cl-primary));
   background-color: rgb(var(--cl-body));
 }
+/* Block page scroll */
+body:has(.backdrop.is-open) {
+  overflow: hidden;
+}
 /* Reset start */
 h1,
 h2,
@@ -814,6 +818,7 @@ img {
   color: #fd9222;
 }
 .modal-btn-icon {
+  fill: currentColor;
   stroke: currentColor;
 }
 .modal-caption {
@@ -859,6 +864,17 @@ img {
 .modal-form-input:focus {
   border-color: #fd9222;
 }
+/* .modal-form-input:not(:placeholder-shown):valid:focus {
+  border-color: lightgreen;
+}
+.modal-form-input:not(:placeholder-shown):invalid:focus {
+  border-color: red;
+} */
+
+.modal-form-input:user-invalid:required {
+  border-color: rgba(231, 74, 59, 1);
+}
+
 .modal-form-icon {
   position: absolute;
   top: 50%;
@@ -866,12 +882,44 @@ img {
   transform: translateY(-50%);
 
   stroke: #111111;
-  transition: stroke 300ms ease-in;
+  transition: stroke 300ms ease-in, opacity 300ms ease-in;
   pointer-events: none;
 }
 .modal-form-input:focus + .modal-form-icon {
   stroke: #fd9222;
 }
+/*? Validation */
+.modal-form-input:user-invalid:required + .modal-form-icon {
+  stroke: rgba(231, 74, 59, 1);
+}
+.modal-form-icon[data-error] {
+  stroke: none;
+  left: calc(100% - 48px);
+  opacity: 0;
+}
+.modal-form-input:user-invalid:required ~ .modal-form-icon[data-error] {
+  opacity: 1;
+}
+.error-text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(110%);
+
+  font-size: 10px;
+  color: rgba(231, 74, 59, 1);
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+.modal-form-input:user-invalid:required ~ .error-text {
+  opacity: 1;
+}
+.btn:disabled {
+  color: white;
+  background-color: #4c4c4c87;
+  cursor: not-allowed;
+}
+/*? Validation */
 .modal-form-message {
   width: 100%;
   height: 137px;
@@ -891,5 +939,76 @@ img {
 }
 .modal-form-message::placeholder {
   color: rgba(64, 64, 64, 0.3);
+}
+
+/* Custom Checkbox */
+.form-agreement {
+  margin-bottom: 40px;
+}
+.agreement-wrapper {
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+}
+.agreement-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+
+  color: transparent;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+
+  transition: 200ms ease-in;
+  transition-property: border-color, background-color;
+  cursor: pointer;
+}
+input[type='checkbox']:checked + .agreement-wrapper > .agreement-checkbox {
+  background-color: #fd9222;
+  border-color: #fd9222;
+  color: #ffffff;
+}
+.agreement-checkbox-icon {
+  fill: currentColor;
+}
+.agreement-link {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+/* #endregion */
+
+/* #region Original checkbox styling */
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.agreement-check {
+  appearance: none;
+
+  display: inline-flex;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  border: 1px solid #4c4c4c;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+
+  cursor: pointer;
+}
+.agreement-check:checked {
+  background-color: #fd9222;
+  border-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Cpath d='M3.94874 9.75416C4.38459 9.75416 4.71409 9.58679 4.93724 9.25207L9.76464 1.97696C9.84484 1.85841 9.90411 1.7416 9.94247 1.62654C9.98082 1.50799 10 1.39467 10 1.28658C10 0.986723 9.8954 0.739164 9.68619 0.543906C9.48047 0.345161 9.22594 0.245789 8.92259 0.245789C8.71339 0.245789 8.53556 0.28763 8.38912 0.371312C8.24616 0.451507 8.11018 0.590977 7.98117 0.789722L3.92782 7.15478L1.89854 4.72278C1.67887 4.46824 1.40342 4.34098 1.07218 4.34098C0.761855 4.34098 0.505579 4.44035 0.303347 4.63909C0.101116 4.83784 0 5.08714 0 5.387C0 5.52299 0.0209205 5.652 0.0627615 5.77403C0.108089 5.89258 0.190028 6.01636 0.308577 6.14537L3.00209 9.32006C3.24965 9.60946 3.5652 9.75416 3.94874 9.75416Z' fill='white'/%3E%3C/svg%3E");
 }
 /* #endregion */

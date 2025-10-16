@@ -636,9 +636,6 @@
     </footer>
 
     <!-- Modal Window -->
-
-    <!-- !!!!  ЗАБЛОКУВАТИ ПРОКРУТКУ ПІД ЧАС ВІДКРИВАННЯ ВІКНА -->
-
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn" type="button">
@@ -646,6 +643,11 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <!-- <button class="modal-btn" type="button">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button> -->
 
         <p class="modal-caption">
           LEAVE A REVIEW ABOUT <span class="accent-text">OUR CHOCOLATE</span>
@@ -660,10 +662,18 @@
                 type="text"
                 id="user-name"
                 name="user-name"
+                required
+                placeholder=" "
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                title="Username must included two words separated by space"
               />
               <svg class="modal-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#user"></use>
               </svg>
+              <svg class="modal-form-icon" width="24" height="24" data-error>
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+              <span class="error-text">Use correct username format</span>
             </div>
           </div>
 
@@ -675,10 +685,15 @@
                 type="email"
                 id="user-email"
                 name="user-email"
+                required
               />
               <svg class="modal-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#email"></use>
               </svg>
+              <svg class="modal-form-icon" width="24" height="24" data-error>
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+              <span class="error-text">Use correct e-mail format</span>
             </div>
           </div>
 
@@ -707,14 +722,49 @@
               name="user-comment"
               rows="4"
               placeholder="Enter text"
+              required
+              minlength="10"
+              maxlength="1000"
             ></textarea>
           </div>
 
-          <button class="btn btn-accent" type="submit">Send</button>
+          <div class="form-agreement">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              id="user-agreement"
+              name="user-agreement"
+              value="true"
+              checked
+            />
+            <label class="agreement-wrapper" for="user-agreement">
+              <span class="agreement-checkbox">
+                <svg class="agreement-checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a
+                class="agreement-link accent-text"
+                href="./index.html"
+                target="_blank"
+              >
+                Privacy Policy
+              </a>
+            </label>
+          </div>
+
+          <!-- <label class="agreement">
+            <input class="agreement-check" type="checkbox" />
+            <span>
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </span>
+          </label> -->
+
+          <button class="btn btn-accent" type="submit" disabled>Send</button>
         </form>
       </div>
     </div>
-
-    <script src="./js/script.js"></script>
   </body>
 </html>
