@@ -34,17 +34,28 @@
     <!-- Header -->
     <header class="header" id="home">
       <div class="container header-container">
-        <a class="header-logo logo" href="#">
-          <i class="logo-accent">SIMPLY</i>CHOCOLATE
-          <img
-            class="logo-icon"
-            src="./images/icons/favicon.svg"
-            alt="Simply chocolate logo"
-            width="24"
-            height="24"
-          />
-        </a>
         <nav class="header-nav">
+          <a class="header-logo logo" href="#">
+            <i class="logo-accent">SIMPLY</i>CHOCOLATE
+            <img
+              class="logo-icon"
+              src="./images/icons/favicon.svg"
+              alt="Simply chocolate logo"
+              width="21"
+              height="21"
+            />
+          </a>
+
+          <button
+            class="mobile-menu-btn"
+            type="button"
+            aria-label="Open menu button"
+          >
+            <svg class="mobile-menu-btn-icon" width="28" height="28">
+              <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
+
           <ul class="header-nav-list">
             <li class="header-nav-item">
               <a class="header-nav-link current" href="#home">Home</a>
@@ -101,7 +112,7 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero" id="hero">
+      <section class="hero hide" id="hero">
         <div class="hero-container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
@@ -119,7 +130,7 @@
       </section>
 
       <!-- Benefits -->
-      <section class="benefits" id="benefits">
+      <section class="benefits hide" id="benefits">
         <div class="container">
           <h2 class="visually-hidden">Benefits of Simply Chocolate</h2>
           <ul class="benefits-list">
@@ -171,7 +182,7 @@
       </section>
 
       <!-- Ingredients -->
-      <section class="ingredients section">
+      <section class="ingredients section hide">
         <div class="container">
           <h2 class="section-title">
             It all adds up to one exceptional
@@ -253,7 +264,7 @@
       </section>
 
       <!-- Made -->
-      <section class="made section" id="made">
+      <section class="made section hide" id="made">
         <div class="container">
           <h2 class="section-title">
             How it’s <span class="accent-text">made</span>?
@@ -300,7 +311,7 @@
       </section>
 
       <!-- Products -->
-      <section class="products section">
+      <section class="products section hide">
         <div class="container">
           <h2 class="section-title">
             Our <span class="accent-text">products</span>
@@ -407,7 +418,7 @@
       </section>
 
       <!-- Bestsellers -->
-      <section class="bestsellers section">
+      <section class="bestsellers section hide">
         <div class="container">
           <h2 class="section-title">
             <span class="accent-text">Top</span> sellers
@@ -472,7 +483,7 @@
       </section>
 
       <!-- Reviews -->
-      <section class="reviews section" id="reviews">
+      <section class="reviews section hide" id="reviews">
         <div class="container">
           <h2 class="reviews-title section-title">
             <span class="accent-text">Chocolate</span> is loved
@@ -531,7 +542,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer hide">
       <div class="container">
         <div class="footer-top">
           <p class="footer-slogan">
@@ -636,7 +647,7 @@
     </footer>
 
     <!-- Modal Window -->
-    <div class="backdrop">
+    <div class="backdrop hide">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="modal-btn-icon" width="28" height="28">
@@ -764,6 +775,82 @@
 
           <button class="btn btn-accent" type="submit" disabled>Send</button>
         </form>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <div class="container">
+        <button class="mobile-menu-btn">
+          <svg class="mobile-menu-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu-nav">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="#">Contacts</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="tel:110001111111">
+              +11 (000) 111-11-11
+            </a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-socials socials">
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Facebook"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a
+              class="socials-link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
