@@ -112,19 +112,23 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero hide" id="hero">
-        <div class="hero-container">
-          <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
-          </h1>
-          <div class="hero-wrapper">
-            <button class="btn btn-accent" type="button">Buy now</button>
-            <button class="btn btn-primary" type="button">How it’s made</button>
-            <a class="hero-link" href="#benefits">
-              scroll down
-              <img src="./images/icons/arrow.svg" alt="Arow down icon" />
-            </a>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-container">
+            <h1 class="hero-title">
+              Treat yourself or a loved one to our finest ingredients for a
+              moment of pure delight!
+            </h1>
+            <div class="hero-wrapper">
+              <button class="btn btn-accent" type="button">Buy now</button>
+              <button class="btn btn-primary" type="button">
+                How it’s made
+              </button>
+              <a class="hero-link" href="#benefits">
+                scroll down
+                <img src="./images/icons/arrow.svg" alt="Arow down icon" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -182,7 +186,7 @@
       </section>
 
       <!-- Ingredients -->
-      <section class="ingredients section hide">
+      <section class="ingredients section">
         <div class="container">
           <h2 class="section-title">
             It all adds up to one exceptional
@@ -192,70 +196,106 @@
             <li class="ingredients-item">
               <img
                 class="ingredients-ill"
+                srcset="
+                  ./images/ingredients/img-1.png    1x,
+                  ./images/ingredients/img-1@2x.png 2x
+                "
                 src="./images/ingredients/img-1.png"
                 alt="MILK CHOCOLATE"
                 width="214"
                 height="160"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">MILK CHOCOLATE</h3>
             </li>
             <li class="ingredients-item">
               <img
                 class="ingredients-ill"
+                srcset="
+                  ./images/ingredients/img-2.png    1x,
+                  ./images/ingredients/img-2@2x.png 2x
+                "
                 src="./images/ingredients/img-2.png"
                 alt="MILK"
                 width="214"
                 height="160"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">MILK</h3>
             </li>
             <li class="ingredients-item">
               <img
                 class="ingredients-ill"
+                srcset="
+                  ./images/ingredients/img-3.png    1x,
+                  ./images/ingredients/img-3@2x.png 2x,
+                  ./images/ingredients/img-3@3x.png 3x
+                "
                 src="./images/ingredients/img-3.png"
                 alt="NUTS"
                 width="214"
                 height="160"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">NUTS</h3>
             </li>
             <li class="ingredients-item">
               <img
                 class="ingredients-ill"
+                srcset="
+                  ./images/ingredients/img-4.png    1x,
+                  ./images/ingredients/img-4@2x.png 2x
+                "
                 src="./images/ingredients/img-4.png"
                 alt="SEMI - SWEET CHOCOLATE"
                 width="214"
                 height="160"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">SEMI - SWEET CHOCOLATE</h3>
             </li>
             <li class="ingredients-item">
               <img
                 class="ingredients-ill"
+                srcset="
+                  ./images/ingredients/img-5.png    1x,
+                  ./images/ingredients/img-5@2x.png 2x
+                "
                 src="./images/ingredients/img-5.png"
                 alt="CACAO"
                 width="214"
                 height="160"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">CACAO</h3>
             </li>
             <li class="ingredients-item">
               <img
                 class="ingredients-ill"
+                srcset="
+                  ./images/ingredients/img-6.png    1x,
+                  ./images/ingredients/img-6@2x.png 2x
+                "
                 src="./images/ingredients/img-6.png"
                 alt="RASPBERRY"
                 width="214"
                 height="160"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">RASPBERRY</h3>
             </li>
             <li class="ingredients-item">
               <img
                 class="ingredients-ill"
+                srcset="
+                  ./images/ingredients/img-7.png    1x,
+                  ./images/ingredients/img-7@2x.png 2x
+                "
                 src="./images/ingredients/img-7.png"
                 alt="COCONUT OIL"
                 width="214"
                 height="160"
+                loading="lazy"
               />
               <h3 class="ingredients-caption">COCONUT OIL</h3>
             </li>
@@ -311,7 +351,7 @@
       </section>
 
       <!-- Products -->
-      <section class="products section hide">
+      <section class="products section">
         <div class="container">
           <h2 class="section-title">
             Our <span class="accent-text">products</span>
@@ -320,10 +360,15 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-1.jpg    1x,
+                  ./images/products/img-1@2x.jpg 2x
+                "
                 src="./images/products/img-1.jpg"
                 alt="Orange Dark chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Orange</h3>
               <p class="products-type">Dark chocolate</p>
@@ -332,10 +377,15 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-2.jpg    1x,
+                  ./images/products/img-2@2x.jpg 2x
+                "
                 src="./images/products/img-2.jpg"
                 alt="Apple&Cranberry Milk chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Apple&Cranberry</h3>
               <p class="products-type">Milk chocolate</p>
@@ -344,10 +394,15 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-3.jpg    1x,
+                  ./images/products/img-3@2x.jpg 2x
+                "
                 src="./images/products/img-3.jpg"
                 alt="Lime&Sea salt Dark chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Lime&Sea salt</h3>
               <p class="products-type">Dark chocolate</p>
@@ -356,10 +411,15 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-4.jpg    1x,
+                  ./images/products/img-4@2x.jpg 2x
+                "
                 src="./images/products/img-4.jpg"
                 alt="Pineapple Dark chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Pineapple</h3>
               <p class="products-type">Dark chocolate</p>
@@ -368,10 +428,15 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-5.jpg    1x,
+                  ./images/products/img-5@2x.jpg 2x
+                "
                 src="./images/products/img-5.jpg"
                 alt="Classic Milk chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Classic</h3>
               <p class="products-type">Milk chocolate</p>
@@ -380,10 +445,15 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-6.jpg    1x,
+                  ./images/products/img-6@2x.jpg 2x
+                "
                 src="./images/products/img-6.jpg"
                 alt="Honey Milk chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Honey</h3>
               <p class="products-type">Milk chocolate</p>
@@ -392,10 +462,15 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-7.jpg    1x,
+                  ./images/products/img-7@2x.jpg 2x
+                "
                 src="./images/products/img-7.jpg"
                 alt="Roasted fruits Dark chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Roasted fruits</h3>
               <p class="products-type">Dark chocolate</p>
@@ -404,10 +479,15 @@
             <li class="products-item">
               <img
                 class="products-img"
+                srcset="
+                  ./images/products/img-8.jpg    1x,
+                  ./images/products/img-8@2x.jpg 2x
+                "
                 src="./images/products/img-8.jpg"
                 alt="Classic White chocolate"
                 width="230"
                 height="201"
+                loading="lazy"
               />
               <h3 class="products-caption">Classic</h3>
               <p class="products-type">White chocolate</p>
@@ -853,5 +933,41 @@
         </ul>
       </div>
     </div>
+
+    <!-- ! PORTFOLIO SECTION -->
+    <!-- Different size and crop  -->
+    <picture>
+      <!-- Desktop -->
+      <source
+        media="(min-width: 1158px)"
+        srcset="
+          ./images/portfolio/img_desk.jpg    1x,
+          ./images/portfolio/img_desk@2x.jpg 2x
+        "
+      />
+      <!-- Tablet -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/portfolio/img_tab.jpg    1x,
+          ./images/portfolio/img_tab@2x.jpg 2x
+        "
+      />
+      <!-- Mobile -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/portfolio/img_mob.jpg    1x,
+          ./images/portfolio/img_mob@2x.jpg 2x
+        "
+      />
+      <img
+        src="./images/portfolio/img_mob.jpg"
+        alt=""
+        loading="lazy"
+        width=""
+        height=""
+      />
+    </picture>
   </body>
 </html>
